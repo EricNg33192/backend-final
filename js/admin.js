@@ -57,7 +57,7 @@ function add() {
     formData.append("id", id.value);
     formData.append("file", file.files[0]);
 
-    fetch("https://final-be-yzu-dce1b30c516e.herokuapp.com/up", {
+    fetch("https://final-be-yzu-dce1b30c516e.herokuapp.com/upload-file", {
         method: "post",
         body: formData
     })
@@ -109,7 +109,7 @@ function update() {
         formData.append("id", id.value);
         formData.append("file", file.files[0]);
 
-        fetch("https://final-be-yzu-dce1b30c516e.herokuapp.com/up", {
+        fetch("https://final-be-yzu-dce1b30c516e.herokuapp.com/upload-file", {
             method: "post",
             body: formData
         })
